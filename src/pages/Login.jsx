@@ -9,19 +9,18 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Logic for login would go here
     navigate("/dashboard");
   };
 
   return (
-    <div className="min-h-screen bg-dark flex items-center justify-center p-6 relative overflow-hidden">
+    <div className="min-h-screen bg-dark flex items-center justify-center p-6 relative overflow-hidden mesh-gradient">
       {/* Background Decor */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.1),transparent_70%)]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1),transparent_70%)]" />
 
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="max-w-md w-full glass-dark p-8 md:p-10 rounded-[2.5rem] border border-white/10 relative z-10"
+        className="max-w-md w-full glass-dark p-10 rounded-[3rem] border border-white/10 relative z-10 shadow-3xl"
       >
         <div className="text-center mb-10">
           <Link to="/" className="inline-flex items-center gap-2 mb-6">
@@ -76,8 +75,8 @@ const Login = () => {
             <a href="#" className="text-primary hover:underline">Forgot Password?</a>
           </div>
 
-          <button type="submit" className="w-full btn-primary py-4 text-lg mt-4 flex items-center justify-center gap-2">
-            Sign In <ArrowRight className="w-5 h-5" />
+          <button type="submit" className="w-full btn-primary py-4 text-lg mt-8 flex items-center justify-center gap-3">
+            Enter Portal <ArrowRight className="w-5 h-5" />
           </button>
         </form>
 
